@@ -23,6 +23,8 @@ github.com/olivierh59500/go-zikmu v0.0.0-20260923085818-5b7edcccaf3d h1:wSbGIKHa
 github.com/olivierh59500/go-zikmu v0.0.0-20260923085818-5b7edcccaf3d/go.mod h1:hm6eQE43WMg8cn5gg4egkVVqSsB3PrWtffPFfnyy4ok=
 github.com/olivierh59500/ym-player v1.0.0 h1:8gAZMsY+zzIjxuue0KlGU9dVFLoL5a0IdMO1ozUFbUc=
 github.com/olivierh59500/ym-player v1.0.0/go.mod h1:CcBCg9lC4P1TUdzYcuuzzIMRvDQmksrFlCdOcNgYgxY=
+golang.org/x/image v0.43.0 h1:FLxcP4ec2350nTfOC8ysKtqYSIFbk/QGjw1ZHNP4tsY=
+golang.org/x/image v0.43.0/go.mod h1:rrpelvGFt+kLPAjPM4HeWPgrl0FtafueU//e5N0qk/Q=
 golang.org/x/sync v0.21.0 h1:HLII4xRRTtCRkxYp4HNFF0Js/Og6q2i++KXbg0gHCwM=
 golang.org/x/sync v0.21.0/go.mod h1:9xrNwdLfx4jkKbNva9FpL6vEN7evnE43NNNJQ2LF3+0=
 golang.org/x/sys v0.0.0-20220712014510-0a85c31ab51e/go.mod h1:oPkhp1MJrh7nUepCBck5+mAzfO9JrbApNNgaTdGDITg=

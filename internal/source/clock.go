@@ -120,11 +120,11 @@ type ScrollClock struct {
 	Columns            [2][40]ScrollColumn
 	Glyph, Column, Row int
 	Changes            int
-	first              bool
+	Remaining          int
 }
 
 func NewScrollClock(message []byte) *ScrollClock {
-	c := &ScrollClock{Message: append([]byte(nil), message...), Fonts: make([]int, len(message)), first: true}
+	c := &ScrollClock{Message: append([]byte(nil), message...), Fonts: make([]int, len(message)), Remaining: len(message)}
 	bank := 0
 	for i, r := range message {
 		if r == 5 {
@@ -145,6 +145,9 @@ func (c *ScrollClock) Step() {
 	wanted := c.Fonts[c.Glyph]
 	if wanted != c.Row {
 		c.Row = wanted
+		if wanted == 0 {
+			c.Remaining = len(c.Message) - c.Glyph
+		}
 		c.Changes++
 		return // The original copies the held row once at each handoff.
 	}
@@ -159,9 +162,14 @@ func (c *ScrollClock) Step() {
 	if c.Column == 4 {
 		c.Column = 0
 		c.Glyph++
+		if c.Row == 0 {
+			c.Remaining--
+		}
 		if c.Glyph == len(c.Message) {
 			c.Glyph = 0
+			c.Remaining = len(c.Message)
+		} else if c.Row == 1 && c.Fonts[c.Glyph] == 0 {
+			c.Remaining = len(c.Message) - c.Glyph
 		}
 	}
-	c.first = false
 }
