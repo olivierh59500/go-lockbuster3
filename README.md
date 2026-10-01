@@ -98,3 +98,15 @@ go run ./cmd/extract -input path/to/freddy.prg -output /tmp/freddy-unpacked.prg
 
 The decoder follows the original backward bitstream, validates bounds and
 checks its word checksum before returning the recovered executable.
+
+## Video export
+
+```sh
+go run ./cmd/video
+```
+
+This creates a three-minute 50 fps H.264/AAC MP4, a PNG poster and a JSON report
+under `recordings/`. DCK exports only the game canvas and its own audio, using
+one simulation clock. Graphics are scaled by an integer factor of two. The
+recordings are local generated media. Duration and poster time can be changed
+with `-duration` and `-poster-at`.
