@@ -20,6 +20,13 @@ including the three volume blocks below the normal 200-line screen. Simulation
 advances at 50 Hz independently of the monitor's refresh rate. The soundtrack is
 Jochen Hippel's **Rollout tune 2**, opened through DCK's audio facade.
 
+```sh
+go run ./cmd/lockbuster3 -capture captures/preview -frame 450 -frames 300
+```
+
+This writes six seconds of native PNG frames without device audio. Runtime
+rendering does not read pixels from the GPU.
+
 ## Android
 
 ```sh
@@ -52,13 +59,6 @@ adb shell am start -S -W -n com.olivierh.lockbuster3/.MainActivity \
 A positive checkpoint can be displayed over the lock screen for verification;
 it does not dismiss the keyguard. Normal launches start at tick zero with music.
 Generated AARs, APKs, build caches and machine settings remain local.
-
-```sh
-go run ./cmd/lockbuster3 -capture captures/preview -frame 450 -frames 300
-```
-
-This writes six seconds of native PNG frames without device audio. Runtime
-rendering does not read pixels from the GPU.
 
 ## Rendering and native behavior
 

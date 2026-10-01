@@ -1,0 +1,61 @@
+{
+  "date": "2026-10-01",
+  "production": "Lockbuster 3",
+  "source_revision": "1755eeb",
+  "device": "Google Pixel 10a",
+  "apk": {
+    "package": "com.olivierh.lockbuster3",
+    "dck_version": "1.0.13",
+    "apk_bytes": 16140395,
+    "apk_sha256": "f38e55a3daa14ba1477fa1c6bc23840195b9c8868314a12482638328895acba4",
+    "elf_load_alignment": [
+      16384,
+      16384,
+      16384,
+      16384
+    ],
+    "zip_library_offset": 16384
+  },
+  "native_clock_checkpoints": 43,
+  "native_index_frame_comparisons": 12,
+  "pixel_capture_review": "Landscape, centered 4:3 canvas with the complete panel grid, both text lanes and the three lower audio blocks; no persistent system bars.",
+  "runtime_samples": [
+    {
+      "tick": 698,
+      "tps": 49.9,
+      "fps": 59.9,
+      "go_heap_mib": 62.3
+    },
+    {
+      "tick": 949,
+      "tps": 50.2,
+      "fps": 60.1,
+      "go_heap_mib": 65.5
+    },
+    {
+      "tick": 1199,
+      "tps": 49.8,
+      "fps": 59.8,
+      "go_heap_mib": 68.7
+    },
+    {
+      "tick": 1449,
+      "tps": 50.1,
+      "fps": 59.9,
+      "go_heap_mib": 71.9
+    },
+    {
+      "tick": 1700,
+      "tps": 49.9,
+      "fps": 59.9,
+      "go_heap_mib": 75.1
+    },
+    {
+      "tick": 1950,
+      "tps": 50.0,
+      "fps": 60.0,
+      "go_heap_mib": 78.3
+    }
+  ],
+  "limits": "Short muted runtime checkpoint. Go heap readings are samples, not memory peaks; GPU execution, battery use and long-run thermal behavior are not measured."
+}
