@@ -211,7 +211,8 @@ func NewGame(mute bool) (_ *Game, err error) {
 }
 
 func putRGB(dst []float32, word uint16) {
-	dst[0], dst[1], dst[2], dst[3] = float32(word>>8&7)/7, float32(word>>4&7)/7, float32(word&7)/7, 1
+	// The ST uses the even levels of the STE's four-bit DAC: 0,34,...,238.
+	dst[0], dst[1], dst[2], dst[3] = float32(word>>8&7)*34/255, float32(word>>4&7)*34/255, float32(word&7)*34/255, 1
 }
 func (g *Game) drawLetters(target int) error {
 	var slots [3]sprites.ImageSlot

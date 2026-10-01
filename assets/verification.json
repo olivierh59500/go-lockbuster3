@@ -1,0 +1,54 @@
+{
+  "production": "Lockbuster / DMA intro (1989)",
+  "source_unpacked_sha256": "807066f6f6190567a223552aabd06b0840b7cabac775a56c7c94c3cf77bfde41",
+  "dck_version": "1.0.13",
+  "logical_canvas": [
+    320,
+    240
+  ],
+  "ticks_per_second": 50,
+  "music": "Rollout tune 2 / Jochen Hippel",
+  "native_clock_checkpoints": 43,
+  "clock_span_updates": 4800,
+  "native_screen_checkpoints": [
+    1,
+    19,
+    41,
+    309,
+    501,
+    801,
+    1144,
+    1600,
+    2400,
+    4000,
+    4600,
+    4800
+  ],
+  "comparison_area": [
+    0,
+    0,
+    320,
+    200
+  ],
+  "exact_index_matches": true,
+  "comparison_method": "Native 68000 RAM screen buffers decoded independently from interleaved bitplanes and compared to the Go indexed composition, including text bitplane replacement. No pixel masks or tolerances inside the comparison area.",
+  "limits": "The lower YM-driven 32x25 blocks are outside the 200-line comparison area. Color lookup follows ST DAC levels; continuous physical hardware timing is not established.",
+  "asset_sha256": {
+    "panels-2.png": "e0f15f8e965dd7c6cc1b4724396af118f46d9615ecca3311d3f2841a8d8ded65",
+    "panels-1.png": "928f2edef831cb8f05ce146dad2de2eb856df0c30815a1e182ba73d984536dbe",
+    "panels-0.png": "fd7cec9b4e8483095c69274d8ce119362ff5f5f643fa5bbc7f4f77d8226d93dc",
+    "panel-order.bin": "f1059fa3a851540a0510054e74bbc53e88bd7a307a68f5db94bb662369f08ccd",
+    "palette.bin": "07f685f7c1af6fbb0f065c4c1fa35fb574c31e0da9bb7e7ab9afa4a6faf9f43c",
+    "letter-a.png": "19c9b35cc75acbc2938c0736d41014c2ec9007e8ebce6ab4223251b2ef5acc10",
+    "letter-d.png": "413514ba47477490701e141ff4a16f014eecd82ab771a1ecf50e3542709d878d",
+    "font-1.png": "904bb75562dedc6f98c8ff197a01b69db71cc25466370a110e796e92719dfe78",
+    "font-0.png": "64fb88b111d83c92020c4d537140b2b75272a9494a0bda79a230eceef3763d97",
+    "music.ym": "f00022e6cab35ecf66b1467a627e96ad91dc506118f63ada070bb9019ea91f18",
+    "letter-m.png": "b1f32457da0305a8cfebc5ed24e9fac77ece0f7056a568b524ee887bfcd86c7d",
+    "message.bin": "33c590ed109d7e1f3b0896a10f80b3c4ff858ecd8ebbf979365b01ace43c8c47",
+    "manifest.json": "87091600e76ac54c357467f3aac681eb5b6ae1f9afca173a8e7868db2331e4c5",
+    "artwork.png": "34fb5bab81561376072f9743a88dc9a23f91e6c6cc7d2d36129efd547e59a212",
+    "motion.bin": "b790b603542e5e75e0f55e94d546b9ae8e23d35fb46221aa53ac3310927b68b7",
+    "rasters.bin": "92c93cb84b5de7198febebf42e5b5e4ebb72ea9f63f9f2c2442db37822a2e3e8"
+  }
+}
