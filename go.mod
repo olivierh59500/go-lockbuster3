@@ -1,4 +1,4 @@
-module github.com/olivierh59500/go-lockbusterintro
+module github.com/olivierh59500/go-lockbuster3
 
 go 1.26.0
 

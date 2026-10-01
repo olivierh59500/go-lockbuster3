@@ -17,8 +17,8 @@ import (
 	"github.com/olivierh59500/democonstructionkit/sound"
 	playback "github.com/olivierh59500/democonstructionkit/sound/ebiten"
 	"github.com/olivierh59500/democonstructionkit/sprites"
-	"github.com/olivierh59500/go-lockbusterintro/assets"
-	"github.com/olivierh59500/go-lockbusterintro/internal/source"
+	"github.com/olivierh59500/go-lockbuster3/assets"
+	"github.com/olivierh59500/go-lockbuster3/internal/source"
 )
 
 const Width, Height, FPS = 320, 240, 50

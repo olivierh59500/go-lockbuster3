@@ -1,6 +1,6 @@
-# Lockbuster Intro Go
+# Lockbuster 3 Go
 
-A Go/Ebitengine port of Lockbuster's 1989 Atari ST intro for DMA, using Demo
+A Go/Ebitengine port of Lockbuster's third Atari ST intro for DMA (1989), using Demo
 Construction Kit. The screen combines turning DMA panels, three animated
 letters, scrolling text over raster colors and three lower blocks.
 
@@ -11,8 +11,8 @@ the Atari ST's PAL clock.
 ## Run
 
 ```sh
-go run ./cmd/lockbusterintro
-go run ./cmd/lockbusterintro -mute
+go run ./cmd/lockbuster3
+go run ./cmd/lockbuster3 -mute
 ```
 
 Space or Escape closes the intro. The logical canvas is 320 × 240 pixels,
@@ -21,7 +21,7 @@ advances at 50 Hz independently of the monitor's refresh rate. The soundtrack is
 Jochen Hippel's **Rollout tune 2**, opened through DCK's audio facade.
 
 ```sh
-go run ./cmd/lockbusterintro -capture captures/preview -frame 450 -frames 300
+go run ./cmd/lockbuster3 -capture captures/preview -frame 450 -frames 300
 ```
 
 This writes six seconds of native PNG frames without device audio. Runtime

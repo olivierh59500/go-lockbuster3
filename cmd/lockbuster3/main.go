@@ -1,11 +1,11 @@
-// Command lockbusterintro runs the native Go/Ebitengine conversion.
+// Command lockbuster3 runs the native Go/Ebitengine conversion.
 package main
 
 import (
 	"flag"
 	"github.com/hajimehoshi/ebiten/v2"
 	capture "github.com/olivierh59500/democonstructionkit/fidelity/ebiten"
-	"github.com/olivierh59500/go-lockbusterintro/internal/demo"
+	"github.com/olivierh59500/go-lockbuster3/internal/demo"
 	"log"
 )
 
@@ -40,7 +40,7 @@ func main() {
 	defer g.Close()
 	ebiten.SetTPS(demo.FPS)
 	ebiten.SetWindowSize(960, 720)
-	ebiten.SetWindowTitle("Lockbuster Intro Go / DMA / 1989")
+	ebiten.SetWindowTitle("Lockbuster 3 Go / DMA / 1989")
 	if err := ebiten.RunGame(g); err != nil {
 		log.Fatal(err)
 	}

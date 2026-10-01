@@ -2,7 +2,7 @@ package source
 
 import (
 	"encoding/csv"
-	"github.com/olivierh59500/go-lockbusterintro/assets"
+	"github.com/olivierh59500/go-lockbuster3/assets"
 	"os"
 	"reflect"
 	"strconv"

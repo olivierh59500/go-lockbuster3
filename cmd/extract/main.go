@@ -6,7 +6,7 @@ import (
 	"log"
 	"os"
 
-	"github.com/olivierh59500/go-lockbusterintro/internal/source"
+	"github.com/olivierh59500/go-lockbuster3/internal/source"
 )
 
 func main() {
