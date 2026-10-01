@@ -20,6 +20,39 @@ including the three volume blocks below the normal 200-line screen. Simulation
 advances at 50 Hz independently of the monitor's refresh rate. The soundtrack is
 Jochen Hippel's **Rollout tune 2**, opened through DCK's audio facade.
 
+## Android
+
+```sh
+./scripts/run-android.sh
+./scripts/run-android.sh --build-only
+```
+
+The script builds the ARM64 Ebitengine library and debug APK, then installs and
+launches **Lockbuster 3** on an authorized USB device. It uses Ebitengine 2.9.11,
+Java 17, SDK 36, Android Gradle Plugin 8.10.1 and the included Gradle 8.11.1
+wrapper. Set `ANDROID_HOME` and `JAVA_HOME` when tools are outside their usual
+locations; `ANDROID_SERIAL` selects a device when more than one is connected.
+
+The APK is `android/app/build/outputs/apk/debug/app-debug.apk`; its application
+ID is `com.olivierh.lockbuster3`. The scene runs in landscape, centered with
+its 4:3 aspect ratio preserved. Android Back closes the activity; swiping from
+the screen edge temporarily reveals the system controls. The window stays awake
+during playback, and Ebitengine suspends/resumes with the activity lifecycle.
+Audio and graphics initialize in the first mobile Update after the Android
+application context is available. All artwork and music are embedded.
+
+An optional muted checkpoint records runtime counters without changing the
+normal launch:
+
+```sh
+adb shell am start -S -W -n com.olivierh.lockbuster3/.MainActivity \
+  --ei lockbuster3_verify_tick 450
+```
+
+A positive checkpoint can be displayed over the lock screen for verification;
+it does not dismiss the keyguard. Normal launches start at tick zero with music.
+Generated AARs, APKs, build caches and machine settings remain local.
+
 ```sh
 go run ./cmd/lockbuster3 -capture captures/preview -frame 450 -frames 300
 ```
