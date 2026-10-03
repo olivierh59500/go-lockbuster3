@@ -8,6 +8,25 @@ The native executable supplies the artwork, text and animation data. DCK
 provides reusable graphics and the YM playback facade. The presentation follows
 the Atari ST's PAL clock.
 
+<!-- Project showcase -->
+## Screenshots
+
+[![Moving metallic panels, DMA lettering, and the bottom scrolltext](docs/media/screenshot-1.png)](docs/media/screenshot-1.png)
+
+Moving metallic panels, DMA lettering, and the bottom scrolltext.
+
+## Video
+
+[![Animated preview of Lockbuster 3 Go](docs/media/preview.gif)](https://github.com/olivierh59500/go-lockbuster3/raw/refs/heads/main/docs/media/preview.mp4)
+
+**[Watch or download the 24-second MP4 preview with sound](https://github.com/olivierh59500/go-lockbuster3/raw/refs/heads/main/docs/media/preview.mp4)**
+
+This preview is captured from the Go production.
+
+The animated image is silent; the MP4 includes the soundtrack.
+
+<!-- End project showcase -->
+
 ## Run
 
 ```sh
